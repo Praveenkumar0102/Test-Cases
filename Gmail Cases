@@ -1,0 +1,102 @@
+Positive Test Cases
+Test Case 1: Successful Email Composition
+Preconditions: The user is logged in to their Gmail account.
+Steps:
+Click on the "Compose" button.
+Enter the subject as "Incubyte".
+Enter the body as "QA test for Incubyte".
+Click on the "Send" button.
+Expected Result: The email is sent successfully with the correct subject and body.
+
+Test Case 2: Email Composition with Attachment
+Preconditions: The user is logged in to their Gmail account.
+Steps:
+Click on the "Compose" button.
+Enter the subject as "Incubyte".
+Enter the body as "QA test for Incubyte".
+Attach a file to the email.
+Click on the "Send" button.
+Expected Result: The email is sent successfully with the correct subject, body and attachment.
+
+Test Case 3: Email Composition with CC and BCC
+Preconditions: The user is logged in to their Gmail account.
+Steps:
+Click on the "Compose" button.
+Enter the subject as "Incubyte".
+Enter the body as "QA test for Incubyte".
+Enter a CC recipient email address.
+Enter a BCC recipient email address.
+Click on the "Send" button.
+Expected Result: The email is sent successfully with the correct subject, body, CC and BCC recipients.
+
+Negative Test Cases
+Test Case 1: Empty Subject
+Preconditions: The user is logged in to their Gmail account.
+Steps:
+Click on the "Compose" button.
+Leave the subject field empty.
+Enter the body as "QA test for Incubyte".
+Click on the "Send" button.
+Expected Result: An error message is displayed and the email is not sent.
+
+Test Case 2: Empty Body
+Preconditions: The user is logged in to their Gmail account.
+Steps:
+Click on the "Compose" button.
+Enter the subject as "Incubyte".
+Leave the body field empty.
+Click on the "Send" button.
+Expected Result: The email is sent successfully with an empty body.
+
+Test Case 3: Invalid Recipient Email Address
+Preconditions: The user is logged in to their Gmail account.
+Steps:
+Click on the "Compose" button.
+Enter the subject as "Incubyte".
+Enter the body as "QA test for Incubyte".
+Enter an invalid recipient email address.
+Click on the "Send" button.
+Expected Result: An error message is displayed and the email is not sent.
+
+Test Case 4: Cancel Email Composition
+Preconditions: The user is logged in to their Gmail account.
+Steps:
+Click on the "Compose" button.
+Enter the subject as "Incubyte".
+Enter the body as "QA test for Incubyte".
+Click on the "Cancel" button.
+Expected Result: The email composition is cancelled and the email is not sent.
+
+Test Case 5: Email Composition with Invalid Attachment
+Preconditions: The user is logged in to their Gmail account.
+Steps:
+Click on the "Compose" button.
+Enter the subject as "Incubyte".
+Enter the body as "QA test for Incubyte".
+Attempt to attach an invalid file type to the email.
+Click on the "Send" button.
+Expected Result: An error message is displayed and the email is not sent.
+
+BDD-Style Test Cases
+
+Positive Scenarios
+Scenario 1: Successful Email Composition
+Given the user is logged in to their Gmail account
+When the user clicks on the "Compose" button
+And enters the subject as "Incubyte"
+And enters the body as "QA test for Incubyte"
+And clicks on the "Send" button
+Then the email is sent successfully with the correct subject and body
+
+Scenario 2: Email Composition with Attachment
+Given the user is logged in to their Gmail account
+When the user clicks on the "Compose" button
+And enters the subject as "Incubyte"
+And enters the body as "QA test for Incubyte"
+And attaches a file to the email
+And clicks on the "Send" button
+Then the email is sent successfully with the correct subject, body and attachment
+
+Scenario 3: Email Composition with CC and BCC
+Given the user is logged in to their Gmail account
+When the user clicks on
